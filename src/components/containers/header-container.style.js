@@ -9,7 +9,7 @@ const HeaderComponentStyle = styled.nav`
     list-style-type: none;
     align-items: center;
 
-    background-color: blueviolet;
+    background-color: #d628cf;
 
     >li {
     }
