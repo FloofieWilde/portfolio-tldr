@@ -3,7 +3,7 @@ import CardStyle from '../containers/card.style'
 
 const Projects = () => {
     return (
-        <CardStyle>Projects</CardStyle>
+        <CardStyle id='projects'>Projects</CardStyle>
     )
 }
 
