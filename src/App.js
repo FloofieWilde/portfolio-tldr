@@ -11,7 +11,7 @@ function App() {
   return (
     <AppStyle className="app">
       <Header />
-      <div class="app_container">
+      <div className="app_container">
         <Landing />
         <WhoAmI />
         <Projects />
