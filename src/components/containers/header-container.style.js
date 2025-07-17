@@ -20,6 +20,17 @@ const HeaderComponentStyle = styled.nav`
         font-weight: 700;
 
         &:hover {
+            a {
+                text-shadow:
+                    -1px -1px 0 #fff,
+                    0   -1px 0 #fff,
+                    1px -1px 0 #fff,
+                    1px  0   0 #fff,
+                    1px  1px 0 #fff,
+                    0    1px 0 #fff,
+                    -1px  1px 0 #fff,
+                    -1px  0   0 #fff;
+            }
             color: ${colors.accent};
         }
     }
