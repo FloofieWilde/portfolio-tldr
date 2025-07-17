@@ -24,6 +24,11 @@ function App() {
 const AppStyle = styled.div`
     background-color: ${colors.background};
     color: ${colors.text};
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 `
 
 export default App;

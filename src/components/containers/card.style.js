@@ -13,7 +13,7 @@ const Card = styled.div`
 
     border-radius: 8px;
 
-    margin: 30px 0;
+    margin: 20px 0;
     padding: 30px;
 
     box-sizing: border-box;

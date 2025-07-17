@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "../../theme/colors.style";
 
 const HeaderComponentStyle = styled.nav`
     display: flex;
@@ -9,9 +10,18 @@ const HeaderComponentStyle = styled.nav`
     list-style-type: none;
     align-items: center;
 
-    background-color: #d628cf;
+    background-color: ${colors.accentSecondary};
 
     >li {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+
+        &:hover {
+            color: ${colors.accent};
+        }
     }
 
 `
