@@ -1,11 +1,11 @@
 import React from 'react'
-import CardStyle from '../containers/card.style'
+import FullScreenContainer from '../containers/fullscreen-container.style'
 import Row from '../containers/row.style'
 import Column from '../containers/column.style'
 
 const Landing = () => {
     return (
-        <CardStyle id='landing'>
+        <FullScreenContainer id='landing'>
             <Row>
                 <Column><img></img></Column>
                 <Column>
@@ -14,7 +14,7 @@ const Landing = () => {
                     <h3>I'm a software engineer</h3>
                 </Column>
             </Row>
-        </CardStyle>
+        </FullScreenContainer>
     )
 }
 

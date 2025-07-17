@@ -1,9 +1,9 @@
 import React from 'react'
-import CardStyle from '../containers/card.style'
+import FullScreenContainer from '../containers/fullscreen-container.style'
 
 const Projects = () => {
     return (
-        <CardStyle id='projects'>Projects</CardStyle>
+        <FullScreenContainer id='projects'>Projects</FullScreenContainer>
     )
 }
 

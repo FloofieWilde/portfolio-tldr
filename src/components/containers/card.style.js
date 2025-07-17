@@ -1,12 +1,24 @@
 import styled from "styled-components";
-import { colors } from "../../theme/colors.style";
-
-const CardStyle = styled.div`
+import { colors } from '../../theme/colors.style'
+const Card = styled.div`
     display: flex;
+    flex: 1;
     flex-direction: column;
-    min-height: 100%;  
-    background-color: ${colors.background};
-    color: ${colors.text};
+
+    height: 100%;
+    width: 80%;
+    max-width: 1200px;
+    min-width: 300px;
+    align-self: center;
+
+    border-radius: 8px;
+
+    margin: 30px 0;
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    background-color: ${colors.surface};
 `
 
-export default CardStyle;
+export default Card;
