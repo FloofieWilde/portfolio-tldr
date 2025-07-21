@@ -14,7 +14,7 @@ const Landing = () => {
                     <ColumnCentered>
                         <h1>Hi, I'm Maxime</h1>
                         <h3>I'm a software engineer</h3>
-                        <span>I create solutions to your problems</span>
+                        <span>I create solutions for your problems</span>
                         <span>I mean whatever but I'm not your therapist</span>
                     </ColumnCentered>
                 </Row>
