@@ -1,0 +1,119 @@
+[
+    {
+        "skillCategory": "Web Dev",
+        "skills": [
+            {
+                "name": "HTML",
+                "highlight": true
+            },
+            {
+                "name": "CSS",
+                "highlight": true
+            },
+            {
+                "name": "JS",
+                "highlight": true
+            },
+            {
+                "name": "Vue.js",
+                "highlight": true
+            },
+            {
+                "name": "Quasar"
+            },
+            {
+                "name": "Nest.js"
+            },
+            {
+                "name": "React.js",
+                "highlight": true
+            },
+            {
+                "name": "Express.js"
+            },
+            {
+                "name": "Bootstrap"
+            },
+            {
+                "name": "Rocket.rs"
+            },
+            {
+                "name": "PhP"
+            },
+            {
+                "name": "Laravel"
+            },
+            {
+                "name": "Code Igniter"
+            }
+        ]
+    },
+    {
+        "skillCategory": "Programming Languages",
+        "skills": [
+            {
+                "name": "C"
+            },
+            {
+                "name": "C++"
+            },
+            {
+                "name": "C#",
+                "highlight": true
+            },
+            {
+                "name": ".NET",
+                "highlight": true
+            },
+            {
+                "name": "Unity"
+            },
+            {
+                "name": "Python"
+            },
+            {
+                "name": "Shell"
+            },
+            {
+                "name": "Rust"
+            },
+            {
+                "name": "Java"
+            }
+        ]
+    },
+    {
+        "skillCategory": "ORM",
+        "skills": [
+            {
+                "name": "Prisma",
+                "highlight": true
+            },
+            {
+                "name": "Sequelise",
+                "highlight": true
+            },
+            {
+                "name": "Eloquent"
+            }
+        ]
+    },
+    {
+        "skillCategory": "Databases",
+        "skills": [
+            {
+                "name": "MySQL",
+                "highlight": true
+            },
+            {
+                "name": "PostGreSQL"
+            },
+            {
+                "name": "SQL Server"
+            },
+            {
+                "name": "MongoDB"
+            }
+        ]
+    }
+]

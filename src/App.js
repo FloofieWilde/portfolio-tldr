@@ -5,9 +5,10 @@ import Projects from "./components/projects/Projects";
 import WhoAmI from "./components/who-i-am/WhoAmI";
 import './App.css';
 import styled from "styled-components";
-import { colors } from "./theme/colors.style"
+import { changeTheme, colors } from "./theme/themeService";
 
 function App() {
+
   return (
     <AppStyle className="app">
       <Header />
@@ -16,13 +17,17 @@ function App() {
         <WhoAmI />
         <Projects />
         <Contact />
+        <input onChange={(event) => {
+          changeTheme(event.target.value);
+        }}></input>
       </div>
     </AppStyle>
   );
 }
 
+
 const AppStyle = styled.div`
-    background-color: ${colors.background};
+    background: ${colors.background};
     color: ${colors.text};
 
     a {

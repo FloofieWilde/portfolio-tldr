@@ -1,4 +1,3 @@
-import React from 'react'
 import FullScreenContainer from '../containers/fullscreen-container.style'
 import Row from '../containers/row.style'
 import Column from '../containers/column.style'

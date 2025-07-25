@@ -1,11 +1,11 @@
-import React from 'react'
-import FullScreenContainer from '../containers/fullscreen-container.style'
 import Card from '../containers/card.style'
 import styled from 'styled-components'
 import Row from '../containers/row.style'
 import Column from '../containers/column.style'
-import { colors } from '../../theme/colors.style'
+import { colors } from '../../theme/themeService'
 import ColumnCentered from '../containers/column-centered.style'
+import skills from '../../data/skills.data.json'
+import FullScreenContainer from '../containers/fullscreen-container.style'
 
 const WhoAmI = () => {
     return (
@@ -15,18 +15,18 @@ const WhoAmI = () => {
                 <Row style={{ flex: 1 }}>
                     <Column>&nbsp;</Column>
                     <ColumnCentered>
-                        <h3>My Techs</h3>
-                        <RowTag>
-                            <Tag>Angular</Tag>
-                            <Tag>React</Tag>
-                            <Tag>Feur</Tag>
-                            <Tag>Rust</Tag>
-                            <Tag>Angular</Tag>
-                            <Tag>Project Management</Tag>
-                            <Tag>Test tag trop long</Tag>
-                            <Tag>Wrapper</Tag>
-                            <Tag>Wrap</Tag>
-                        </RowTag>
+                        {skills.map((category, index) => (
+                            <div key={index}>
+                                <h3>{category.skillCategory}</h3>
+                                <RowTag>
+                                    {category.skills.map((skill, idx) => (
+                                        <Tag key={idx} className={skill.highlight ? 'accent' : ''}>
+                                            {skill.name}
+                                        </Tag>
+                                    ))}
+                                </RowTag>
+                            </div>
+                        ))}
                     </ColumnCentered>
                 </Row>
             </Card>
@@ -35,14 +35,20 @@ const WhoAmI = () => {
 }
 
 const Tag = styled.span`
-    background-color: ${colors.background};
+    background: ${colors.backgroundLight};
     font-size: 1.2rem;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: bold;
+    ${colors.glassEffect};
+
+    &.accent {
+        background-color: ${colors.accent};
+    }
 `
 
 const RowTag = styled(Row)`
     flex-wrap: wrap;
+    flex: 0;
 `
 export default WhoAmI

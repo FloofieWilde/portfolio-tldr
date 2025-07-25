@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { colors } from '../../theme/colors.style'
+import { colors } from "../../theme/themeService";
+
 const Card = styled.div`
     display: flex;
     flex: 1;
@@ -19,6 +20,7 @@ const Card = styled.div`
     box-sizing: border-box;
 
     background-color: ${colors.surface};
+    ${colors.glassEffectSurface}
 `
 
 export default Card;

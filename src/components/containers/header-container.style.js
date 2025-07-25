@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../theme/colors.style";
+import { colors } from "../../theme/themeService";
 
 const HeaderComponentStyle = styled.nav`
     display: flex;
@@ -9,6 +9,7 @@ const HeaderComponentStyle = styled.nav`
     justify-content: space-around;
     list-style-type: none;
     align-items: center;
+    ${colors.glassEffect}
 
     background-color: ${colors.accentSecondary};
 
